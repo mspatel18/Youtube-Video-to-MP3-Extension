@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Extension</title>
+    <style>
+      /* Add any styles for your popup here */
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&display=swap');
+      body{
+        /* background-color: rgb(9, 0, 61); */
+        background: #141E30;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #1C1D1E, #141E30);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #1C1D1E, #141E30); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        width: 300px;
+        height: 350px;
+      }
+      .title{
+        margin-top: 20px;
+        font-family:'Montserrat', sans-serif;
+        font-size: 30px;
+        font-weight:900;
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+      }    
+      #desc{
+        color: white;
+        margin-top: 10px;
+        font-family:'Montserrat', sans-serif;
+        font-size: 17px;
+        font-weight:600;       
+        /* margin-bottom: 10px; */
+      }
+      #link{
+        color: #ff5d5d;
+        margin-top: 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 15px;
+        font-weight: 600;
+        margin-left: 90px;      
+      }
+      input{
+        margin-top: 10px;
+        padding: 5px 10px;
+        color: #141E30;
+      }
+      button{
+        margin-top:10px;
+        padding: 5px 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="title">YT Video to MP3 Downloader</div>
+    <input type="text" id="input" placeholder="Paste your link here">
+    <div id="desc">Your link will be generated shortly</div>
+    <a id="link" href="" target="_blank"></a>
+    <script src="popup.js"></script>
+  </body>
+</html>
